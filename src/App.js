@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import './App.css';
 import Coin from './Coin'
+import Footer from './Footer'
 
 function App() {
       const [coins, setCoins] = useState([]);
@@ -45,7 +46,8 @@ function App() {
                                     marketcap={coin.market_cap}
                               />
                         )
-                   })}
+                  })}
+                  <Footer/>
             </div>
       );
 }
