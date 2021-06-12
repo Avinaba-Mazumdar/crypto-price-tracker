@@ -5,23 +5,36 @@
       box-sizing: border-box;
       padding:0;
       margin:0;
-      background-color: #1a1a1c;
+      background-color: #000025;
       color: #fff;
       position: relative;
 }
+
+::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a1a1f;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #7918f2;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4801ff;
+    }
 
 .app{
       display: flex;
       flex-direction:column;
       align-items: center;
-      margin-top: 64px;
+      margin-top: 50px;
       color: #fff;
 }
 
 .coin-search{
-      margin-bottom: 64px;
+      margin-bottom: 56px;
       display: flex;
-      flex-direction:column;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
 }
@@ -32,7 +45,7 @@
 }
 
 .coin-input{
-      padding-left: 16px;
+      padding-left: 30px;
       width: 300px;
       height: 50px;
       border-radius: 25px;
