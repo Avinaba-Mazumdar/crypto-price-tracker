@@ -1,1 +1,1 @@
-# Live CryptoCurrency Price Tracker
+# Crypto Price Tracker
