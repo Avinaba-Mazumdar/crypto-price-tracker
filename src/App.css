@@ -62,3 +62,7 @@
 }
 
 .coin-input::placeholder{color: white}
+
+.table{
+      min-height: 62vh;
+}
