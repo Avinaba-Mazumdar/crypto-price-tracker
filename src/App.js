@@ -32,21 +32,22 @@ function App() {
                               <input type='text' placeholder='search' className='coin-input' onChange={handleChange}/>
                         </form>
                   </div>
-                  
-                  {filteredCoins.map(coin => {
-                        return (
-                              <Coin
-                                    key={coin.id} 
-                                    name={coin.name} 
-                                    image={coin.image}
-                                    symbol={coin.symbol}
-                                    volume={coin.total_volume}
-                                    price={coin.current_price}
-                                    priceChange={coin.price_change_percentage_24h}
-                                    marketcap={coin.market_cap}
-                              />
-                        )
-                  })}
+                  <div className='table'>
+                        {filteredCoins.map(coin => {
+                              return (
+                                    <Coin
+                                          key={coin.id} 
+                                          name={coin.name} 
+                                          image={coin.image}
+                                          symbol={coin.symbol}
+                                          volume={coin.total_volume}
+                                          price={coin.current_price}
+                                          priceChange={coin.price_change_percentage_24h}
+                                          marketcap={coin.market_cap}
+                                    />
+                              )
+                        })}
+                  </div>
                   <Footer/>
             </div>
       );
