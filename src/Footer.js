@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
       return (
             <div className='footer'>
-                  <p>© {new Date().getFullYear()} - Crypto Price Tracker - No rights reserved</p>
+                  <p>© {new Date().getFullYear()} - Crypto Price App - No rights reserved</p>
             </div>
       )
 }

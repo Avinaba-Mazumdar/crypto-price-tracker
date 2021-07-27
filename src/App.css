@@ -5,7 +5,7 @@
       box-sizing: border-box;
       padding:0;
       margin:0;
-      background-color: #000025;
+      background-color: #161636;
       color: #fff;
       position: relative;
 }
@@ -24,8 +24,20 @@
     }
 
 @media (max-width: 767px) {
+      .volume{
+            display: none;
+      }
+      .mktcap{
+            display: none;
+      }
+}
+
+@media (max-width: 480px){
       .app{
             position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
       }
 }
 
@@ -63,6 +75,12 @@
 
 .coin-input::placeholder{color: white}
 
-.table{
-      min-height: 62vh;
+table{
+      min-height: 64vh;
+      min-width: 70%;
+}
+
+.table-th{
+      border: 80px;
+      border-bottom: 3px solid white;
 }

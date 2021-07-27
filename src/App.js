@@ -32,7 +32,19 @@ function App() {
                               <input type='text' placeholder='search' className='coin-input' onChange={handleChange}/>
                         </form>
                   </div>
-                  <div className='table'>
+                  <table className='table' cellPadding={0} cellSpacing={0}>
+                        <thead>
+                              <tr className='table-th'>
+                                    <th className='table-th'>Icon</th>
+                                    <th className='table-th'>Name</th>
+                                    <th className='table-th'>Symbol</th>
+                                    <th className='table-th'>Price</th>
+                                    <th className='table-th volume'>Volume</th>
+                                    <th className='table-th'>⬆⬇</th>
+                                    <th className='table-th mktcap'>Mkt. Cap</th>
+                              </tr>
+                        </thead>
+                        <tbody>
                         {filteredCoins.map(coin => {
                               return (
                                     <Coin
@@ -47,7 +59,8 @@ function App() {
                                     />
                               )
                         })}
-                  </div>
+                        </tbody>
+                  </table>
                   <Footer/>
             </div>
       );
